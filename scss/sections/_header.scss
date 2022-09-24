@@ -1,0 +1,15 @@
+.navbar-toggler:focus{
+    box-shadow: 0 0 0;
+}
+
+.navbar-nav{
+    align-items: center;
+    background-color: $color-moradoSuave;
+    li{
+        margin: 10px;
+    }
+}
+
+.index-nav{
+    max-width: 7vh;
+}
