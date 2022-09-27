@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/7546e0946b.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7546e0946b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,9 +18,11 @@
   <div class="grid-container">
     <div class="menu-navegacion">
       <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg color-nav">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="index-nav" src="./assets/nav-index.png" alt="Pastel rosa y corazon sobre el"></a>
+            <a class="navbar-brand" href="./index.html"><img class="index-nav" src="./assets/nav-index.png"
+                alt="Pastel rosa y corazon sobre el"></a>
+            <a class="navbar-brand font-familia" href="./index.html">LA FAMILIA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -27,16 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PENSAR</a>
+                  <a class="nav-link active" href="./pages/listaDeTortas.html">Lista de Tortas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PENSAR</a>
+                  <a class="nav-link active" href="#">PENSAR</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PENSAR</a>
+                  <a class="nav-link active" href="#">PENSAR</a>
                 </li>
               </ul>
             </div>
@@ -46,7 +49,16 @@
     </div>
 
     <div class="section-one">
-
+      <div class="section-one__cardContainer">
+        <img class="section-one__imgTortaClasica" src="./assets/index/torta-clasica.jpg"
+          alt="Tarta de chocolate con crema, pedazos de durazno y moras">
+        <div class="section-one__bottomCont">
+          <p>Lista de Tortas</p>
+          <div class="btn-primary">
+            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section-two">

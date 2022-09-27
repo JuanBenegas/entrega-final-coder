@@ -13,3 +13,12 @@
 .index-nav{
     max-width: 7vh;
 }
+
+.color-nav{
+    background-color: $color-moradoSuave;
+    .font-familia{
+        font-family: $font-AbrilFatface;
+        letter-spacing: 2px;
+        
+    }
+}

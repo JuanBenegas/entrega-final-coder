@@ -1,0 +1,44 @@
+.section-one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__cardContainer{
+        max-width: 90vw;
+        box-shadow: 3px 4px 8px 0px $color-negro;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__imgTortaClasica{
+        max-width: 100%;
+    }
+    &__bottomCont{
+        position: relative;
+        background: $color-arena;
+        display: flex;
+        justify-content: space-between;
+        padding-inline-end: 15px;
+        align-items: center;
+        padding: 10px;
+        a{
+            text-decoration: none;
+            color: $color-blanco;
+        }
+        p{
+            color: $color-negro;
+            font-family: $font-Roboto;
+        }
+        .btn-primary{
+            background-color: $color-moradoSuave;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+}
