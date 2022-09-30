@@ -1,6 +1,6 @@
 .grid-container {  display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -8,6 +8,7 @@
       "menu-navegacion"
       "section-one"
       "section-two"
+      "section-three"
       "footer";
   }
   
@@ -21,6 +22,10 @@
   
 .section-two { 
     grid-area: section-two; 
+}
+
+.section-three {
+    grid-area: section-three;
 }
   
 .footer { 

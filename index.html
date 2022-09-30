@@ -10,6 +10,8 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/7546e0946b.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/7546e0946b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -55,18 +57,81 @@
         <div class="section-one__bottomCont">
           <p>Lista de Tortas</p>
           <div class="btn-primary">
-            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./pages/listaDeTortas.html"><i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="section-two">
+      <div class="wow animate__animated animate__bounceInLeft section-two__cardContainer">
+        <img class="section-two__imgTorta" src="./assets/index/cup-cake.webp"
+          alt="Tres cupcakes con crema blanca por encima y una corona dorada">
+        <div class="section-two__bottomCont">
+          <h3>Cup cake</h3>
+          <div class="btn-primary">
+            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
 
+      <div class="wow animate__animated animate__bounceInRight section-two__cardContainer">
+        <img class="section-two__imgTorta" src="./assets/index/lemon-pie.webp"
+          alt="Lemon pie con frutos rojos por encima">
+        <div class="section-two__bottomCont">
+          <h3>Lemon Pie</h3>
+          <div class="btn-primary">
+            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+
+    <div class="section-three">
+      <h4 class="destacados">Productos Destacados</h4>
+      <div class="section-three__productos">
+        <div class="wow animate__animated animate__bounceInLeft cardContainer">
+          <img class="cardContainer__imgTorta" src="./assets/index/torta-japonesa.webp"
+            alt="Lemon pie con frutos rojos por encima">
+          <div class="cardContainer__bottomCont">
+            <h3>Torta Japonesa</h3>
+          </div>
+        </div>
+
+        <div class="wow animate__animated animate__bounceInRight cardContainer">
+          <img class="cardContainer__imgTorta" src="./assets/index/torta-lemon.webp"
+            alt="Lemon pie con frutos rojos por encima">
+          <div class="cardContainer__bottomCont">
+            <h3>Lemon Pie Clasico</h3>
+          </div>
+        </div>
+
+        <div class="wow animate__animated animate__bounceInLeft cardContainer">
+          <img class="cardContainer__imgTorta" src="./assets/index/torta-manzana.webp"
+            alt="Lemon pie con frutos rojos por encima">
+          <div class="cardContainer__bottomCont">
+            <h3>Torta de Manzana</h3>
+          </div>
+        </div>
+
+        <div class="wow animate__animated animate__bounceInRight cardContainer">
+          <img class="cardContainer__imgTorta" src="./assets/index/magdalena.webp"
+            alt="Lemon pie con frutos rojos por encima">
+          <div class="cardContainer__bottomCont">
+            <h3>Magdalenas</h3>
+          </div>
+        </div>
+      </div>
+      <div class="wow animate__animated animate__flipInX verProductos">
+        <a href="">Ver todos los productos</a>
+      </div>
     </div>
 
     <div class="footer">
-
+      <h3>Redes Sociales</h3>
     </div>
 
   </div>
@@ -79,6 +144,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

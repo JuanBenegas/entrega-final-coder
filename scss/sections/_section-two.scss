@@ -1,0 +1,43 @@
+.section-two{
+    display: flex;
+    justify-content: space-around;
+    &__cardContainer{
+        box-shadow: 1px 1px 4px 0px $color-negro;
+    }
+    &__imgTorta{
+        @extend %imagen-card;
+    }
+    &__bottomCont{
+        position: relative;
+        background: $color-rosaSuave;
+        display: flex;
+        justify-content: space-between;
+        padding-inline-end: 15px;
+        align-items: center;
+        padding: 10px;
+        h3{
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: $color-blanco;
+        }
+        p{
+            color: $color-negro;
+            font-family: $font-Roboto;
+        }
+        .btn-primary{
+            background-color: $color-celesteSuave;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+}

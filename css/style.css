@@ -15,12 +15,23 @@ p {
   margin: 0;
   padding: 0; }
 
+.section-two__imgTorta, .section-three .cardContainer__imgTorta {
+  max-width: 45vw; }
+
+.destacados {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px; }
+
+body {
+  background-color: #edf2f4; }
+
 .navbar-toggler:focus {
   box-shadow: 0 0 0; }
 
 .navbar-nav {
   align-items: center;
-  background-color: #cdb4db; }
+  background-color: #ffc8dd; }
   .navbar-nav li {
     margin: 10px; }
 
@@ -28,7 +39,7 @@ p {
   max-width: 7vh; }
 
 .color-nav {
-  background-color: #cdb4db; }
+  background-color: #ffc8dd; }
   .color-nav .font-familia {
     font-family: "Abril Fatface", cursive;
     letter-spacing: 2px; }
@@ -36,11 +47,11 @@ p {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "menu-navegacion" "section-one" "section-two" "footer"; }
+  grid-template-areas: "menu-navegacion" "section-one" "section-two" "section-three" "footer"; }
 
 .menu-navegacion {
   grid-area: menu-navegacion; }
@@ -51,6 +62,9 @@ p {
 .section-two {
   grid-area: section-two; }
 
+.section-three {
+  grid-area: section-three; }
+
 .footer {
   grid-area: footer; }
 
@@ -58,16 +72,41 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column; }
+  .section-one__selcTorta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/tortas/selecciona-torta.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh; }
+    .section-one__selcTorta h1 {
+      display: inline-block;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      text-shadow: 4px 3px 1px black; }
+    .section-one__selcTorta ul {
+      display: inline;
+      margin-top: 10px; }
+      .section-one__selcTorta ul li {
+        display: inline;
+        color: white;
+        font-family: "Roboto", sans-serif; }
+        .section-one__selcTorta ul li a {
+          text-decoration: none;
+          color: white; }
   .section-one__cardContainer {
-    max-width: 90vw;
-    box-shadow: 3px 4px 8px 0px black;
+    max-width: 95vw;
+    box-shadow: 1px 1px 4px 0px black;
     margin-top: 20px;
     margin-bottom: 10px; }
   .section-one__imgTortaClasica {
     max-width: 100%; }
   .section-one__bottomCont {
     position: relative;
-    background: #faedcd;
+    background: #ffc8dd;
     display: flex;
     justify-content: space-between;
     padding-inline-end: 15px;
@@ -78,9 +117,10 @@ p {
       color: white; }
     .section-one__bottomCont p {
       color: black;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Roboto", sans-serif;
+      font-size: 20px; }
     .section-one__bottomCont .btn-primary {
-      background-color: #cdb4db;
+      background-color: #a2d2ff;
       border-radius: 50%;
       cursor: pointer;
       width: 50px;
@@ -90,3 +130,89 @@ p {
       align-items: center; }
       .section-one__bottomCont .btn-primary i {
         font-size: 25px; }
+
+.section-two {
+  display: flex;
+  justify-content: space-around; }
+  .section-two__cardContainer {
+    box-shadow: 1px 1px 4px 0px black; }
+  .section-two__bottomCont {
+    position: relative;
+    background: #ffc8dd;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end: 15px;
+    align-items: center;
+    padding: 10px; }
+    .section-two__bottomCont h3 {
+      font-size: 20px; }
+    .section-two__bottomCont a {
+      text-decoration: none;
+      color: white; }
+    .section-two__bottomCont p {
+      color: black;
+      font-family: "Roboto", sans-serif; }
+    .section-two__bottomCont .btn-primary {
+      background-color: #a2d2ff;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-two__bottomCont .btn-primary i {
+        font-size: 25px; }
+
+.section-three__productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.section-three .cardContainer {
+  box-shadow: 1px 1px 4px 0px black;
+  margin-top: 15px; }
+  .section-three .cardContainer__bottomCont {
+    background: #ffc8dd;
+    display: flex;
+    justify-content: center;
+    padding-inline-end: 15px;
+    align-items: center;
+    padding: 10px; }
+    .section-three .cardContainer__bottomCont h3 {
+      font-size: 20px; }
+    .section-three .cardContainer__bottomCont a {
+      text-decoration: none;
+      color: white; }
+    .section-three .cardContainer__bottomCont p {
+      color: black;
+      font-family: "Roboto", sans-serif; }
+    .section-three .cardContainer__bottomCont .btn-primary {
+      background-color: #ffc8dd;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-three .cardContainer__bottomCont .btn-primary i {
+        font-size: 25px; }
+
+.section-three .verProductos {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+  .section-three .verProductos a {
+    text-decoration: none;
+    background-color: #a2d2ff;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 1px 1px 3px 0px black;
+    width: 80vw;
+    text-align: center; }
+
+.footer h3 {
+  margin-top: 20px; }

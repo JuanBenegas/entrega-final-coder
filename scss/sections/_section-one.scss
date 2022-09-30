@@ -2,9 +2,39 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    &__selcTorta{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../assets/tortas/selecciona-torta.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 15vh;
+        h1{
+            display: inline-block;
+            color: $color-blanco;
+            font-family: $font-Roboto;
+            text-shadow: 4px 3px 1px black;
+        }
+        ul{
+            display: inline;
+            margin-top: 10px;
+            li{
+                display: inline;
+                color: $color-blanco;
+                font-family: $font-Roboto;
+                a{
+                    text-decoration: none;
+                    color: $color-blanco;
+                }
+            }
+        }
+    }
     &__cardContainer{
-        max-width: 90vw;
-        box-shadow: 3px 4px 8px 0px $color-negro;
+        max-width: 95vw;
+        box-shadow: 1px 1px 4px 0px $color-negro;
         margin-top: 20px;
         margin-bottom: 10px;
     }
@@ -13,7 +43,7 @@
     }
     &__bottomCont{
         position: relative;
-        background: $color-arena;
+        background: $color-rosaSuave;
         display: flex;
         justify-content: space-between;
         padding-inline-end: 15px;
@@ -26,9 +56,10 @@
         p{
             color: $color-negro;
             font-family: $font-Roboto;
+            font-size: 20px;
         }
         .btn-primary{
-            background-color: $color-moradoSuave;
+            background-color: $color-celesteSuave;
             border-radius: 50%;
             cursor: pointer;
             width: 50px;

@@ -5,6 +5,7 @@
     ul{
         list-style: none;
     }
+    // border-style: solid;
 }
 
 p{
@@ -16,10 +17,18 @@ p{
 
 @import './variables/colors';
 @import './variables/fonts';
+@import './variables/extend';
+@import './sections/body';
 
+body{
+    background-color: $color-grisSuave;
+}
 
 // Imports Sections
 
 @import './sections/header.scss';
 @import './sections/gridMobile';
 @import './sections/section-one';
+@import './sections/section-two';
+@import './sections/section-three';
+@import './sections/footer';

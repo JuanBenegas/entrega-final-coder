@@ -1,0 +1,66 @@
+.section-three{
+    // display: flex;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
+    &__productos{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap
+    }
+   .cardContainer{
+    box-shadow: 1px 1px 4px 0px $color-negro;
+    margin-top: 15px;
+        &__imgTorta{
+            @extend %imagen-card;
+        }
+        &__bottomCont{
+            // position: relative;
+            background: $color-rosaSuave;
+            display: flex;
+            justify-content: center;
+            padding-inline-end: 15px;
+            align-items: center;
+            padding: 10px;
+            h3{
+                font-size: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: $color-blanco;
+            }
+            p{
+                color: $color-negro;
+                font-family: $font-Roboto;
+            }
+            .btn-primary{
+                background-color: $color-rosaSuave;
+                border-radius: 50%;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .verProductos{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        a{
+            text-decoration: none;
+            background-color: $color-celesteSuave;
+            padding: 10px;
+            border-radius: 10px;
+            color: $color-blanco;
+            font-family: $font-Roboto;
+            box-shadow: 1px 1px 3px 0px $color-negro;
+            width: 80vw;
+            text-align: center;
+        }
+    }
+}
