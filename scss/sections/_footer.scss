@@ -1,5 +1,33 @@
 .footer{
+    background-color: $color-celesteSuave;
     h3{
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: $color-blanco;
+    }
+    i{
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    img{
+        width: auto;
+        height: 30px;
+        margin: 0 5px 5px 0;
+        border: 1px solid #00000012;
+        border-radius: 4px;
+    }
+    &__pagos{
+        font-size: 15px;
+    }
+    &__contactanos{
+        font-size: 15px;
+    }
+    &__listaCont{
+        i{
+            font-size: 13px;
+        }
     }
 }

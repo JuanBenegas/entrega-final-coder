@@ -212,7 +212,29 @@ body {
     font-family: "Roboto", sans-serif;
     box-shadow: 1px 1px 3px 0px black;
     width: 80vw;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
 
-.footer h3 {
-  margin-top: 20px; }
+.footer {
+  background-color: #a2d2ff; }
+  .footer h3 {
+    margin-top: 10px;
+    margin-left: 10px; }
+  .footer a {
+    text-decoration: none;
+    color: white; }
+  .footer i {
+    font-size: 35px;
+    margin-left: 10px; }
+  .footer img {
+    width: auto;
+    height: 30px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
+    border-radius: 4px; }
+  .footer__pagos {
+    font-size: 15px; }
+  .footer__contactanos {
+    font-size: 15px; }
+  .footer__listaCont i {
+    font-size: 13px; }
