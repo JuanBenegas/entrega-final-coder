@@ -64,4 +64,10 @@
             margin-bottom: 20px;
         }
     }
+    a{
+        color: $color-negro;
+        :hover{
+            color: white;
+        }
+    }
 }
