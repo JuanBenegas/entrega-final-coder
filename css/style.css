@@ -16,6 +16,24 @@ p {
   margin: 0;
   padding: 0; }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ebebeb #ffffff; }
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px; }
+
+*::-webkit-scrollbar-track {
+  background: #ffffff; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  border: 3px none #ff0000; }
+
 .section-two__imgTorta, .section-three .cardContainer__imgTorta {
   max-width: 45vw; }
 
@@ -56,6 +74,21 @@ body {
     font-family: "Abril Fatface", cursive;
     letter-spacing: 2px; }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end; }
+  .navbar-nav a {
+    animation: .3s;
+    border-radius: 20px; }
+  .navbar-nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px; }
+  .navbar-nav .section-one {
+    max-width: 70vw; } }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto;
@@ -83,7 +116,8 @@ body {
 .section-one {
   display: flex;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-y: hidden; }
   .section-one__selcTorta {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../selecciona-torta.webp);
     background-size: cover;
@@ -143,6 +177,14 @@ body {
       .section-one__bottomCont .btn-primary i {
         font-size: 25px; }
 
+@media (min-width: 992px) {
+  .section-one__cardContainer {
+    max-width: 70vw; } }
+
+@media (min-width: 1440px) {
+  .section-one__cardContainer {
+    max-width: 30vw; } }
+
 .section-two {
   display: flex;
   justify-content: space-around; }
@@ -188,10 +230,32 @@ body {
       text-align: center;
       max-width: 100vw; }
 
+@media (min-width: 992px) {
+  .section-two .productoIndividual {
+    max-width: 50vw; }
+    .section-two .productoIndividual img {
+      height: 50vh; } }
+
+@media (min-width: 1440px) {
+  .section-two {
+    justify-content: space-evenly; }
+    .section-two__cardContainer {
+      max-width: 30vw; } }
+
 .section-three__productos {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
+
+.section-three__nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-three__nosotros p {
+    padding: 20px; }
+  .section-three__nosotros img {
+    max-width: 90vw;
+    margin-bottom: 20px; }
 
 .section-three .cardContainer {
   box-shadow: 1px 1px 4px 0px black;
@@ -252,6 +316,14 @@ body {
   .section-three .contactanos h3 {
     margin-top: 20px;
     text-align: center; }
+
+@media (min-width: 1440px) {
+  .section-three__nosotros p {
+    max-width: 70vw; }
+  .cardContainer {
+    max-width: 35vw; }
+  .destacados {
+    margin-left: 110px; } }
 
 .footer {
   background-color: #a2d2ff; }

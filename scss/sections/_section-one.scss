@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-y: hidden;
     &__selcTorta{
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../selecciona-torta.webp);
         background-size: cover;
@@ -70,6 +71,22 @@
             i{
                 font-size: 25px;
             }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .section-one{
+        &__cardContainer{
+            max-width: 70vw;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .section-one{
+        &__cardContainer{
+            max-width: 30vw;
         }
     }
 }

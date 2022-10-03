@@ -21,3 +21,25 @@
         letter-spacing: 2px;
     }
 }
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+    .navbar-nav{
+        a{
+            animation: .3s;
+            border-radius: 20px;
+        }
+        a:hover{
+            background-color: $color-blanco;
+            color: $color-negro;
+            border-radius: 20px;
+        }
+        .section-one{
+            max-width: 70vw;
+        }
+    }
+}

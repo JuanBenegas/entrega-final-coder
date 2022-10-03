@@ -15,6 +15,28 @@ p{
     padding: 0;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ebebeb #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    border: 3px none #ff0000;
+  }
+
 // IMPORTS VARIABLES
 
 @import './variables/colors';

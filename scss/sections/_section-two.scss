@@ -56,3 +56,23 @@
         }
     }
 }
+
+@media (min-width: 992px){
+    .section-two{
+        .productoIndividual{
+            max-width: 50vw;
+            img{
+                height: 50vh;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .section-two{
+        justify-content: space-evenly;
+        &__cardContainer{
+            max-width: 30vw;
+        }
+    }
+}
