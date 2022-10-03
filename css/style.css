@@ -7,7 +7,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
   * ul {
     list-style: none; }
 
@@ -174,6 +175,18 @@ body {
       align-items: center; }
       .section-two__bottomCont .btn-primary i {
         font-size: 25px; }
+  .section-two .productoIndividual {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-two .productoIndividual img {
+      max-width: 80vw;
+      margin: 10px;
+      box-shadow: 1px 1px 4px 0px black; }
+    .section-two .productoIndividual p {
+      padding: 25px;
+      text-align: center;
+      max-width: 100vw; }
 
 .section-three__productos {
   display: flex;
@@ -230,6 +243,15 @@ body {
   color: black; }
   .section-three a :hover {
     color: white; }
+
+.section-three .contactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; }
+  .section-three .contactanos h3 {
+    margin-top: 20px;
+    text-align: center; }
 
 .footer {
   background-color: #a2d2ff; }
